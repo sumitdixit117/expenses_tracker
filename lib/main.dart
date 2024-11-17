@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Personal Expenses',
+      title: 'Expenses Tracker',
       theme: ThemeData(
           primarySwatch: Colors.purple,
           colorScheme:
@@ -196,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
     return Platform.isIOS
         ? CupertinoNavigationBar(
             middle: Text(
-              'Personal Expenses',
+              'Expenses Tracker',
             ),
             trailing: Row(
               mainAxisSize: MainAxisSize.min,
@@ -210,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
           )
         : AppBar(
             title: Text(
-              'Personal Expenses',
+              'Expenses Tracker',
             ),
             actions: <Widget>[
               IconButton(

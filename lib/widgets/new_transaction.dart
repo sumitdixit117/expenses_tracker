@@ -123,13 +123,13 @@ class _NewTransactionState extends State<NewTransaction> {
                 ),
               ),
               ElevatedButton(
-                child: Text('Add Transaction'),
                 style: ElevatedButton.styleFrom(
                   foregroundColor:
                       Theme.of(context).textTheme.labelLarge?.color,
                   backgroundColor: Theme.of(context).primaryColor,
                 ),
                 onPressed: _submitData,
+                child: Text('Add Transaction'),
               ),
             ],
           ),
